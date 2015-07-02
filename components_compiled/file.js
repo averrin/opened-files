@@ -65,7 +65,7 @@ module.exports = {
       color = (ref = this.$root) != null ? (ref1 = ref.colors) != null ? ref1[this.entry.path] : void 0 : void 0;
       if (color != null) {
         if (color) {
-          return this.$el.setAttribute("style", "background-image: -webkit-linear-gradient(right, " + color + " 0%, rgba(0,0,0,0) 100%);");
+          return this.$el.setAttribute("style", "border-right: solid 6px " + color + ";");
         } else {
           return this.$el.removeAttribute("style");
         }
